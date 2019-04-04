@@ -4,9 +4,39 @@
 }
 
 .App {
-  text-align: center;
-  background-color: rgb(18, 10, 29);
   height: 100vh;
-  font-family: 'Raleway';
-  color: whitesmoke;
+  background-color: rgb(18, 10, 29);
+  .wrapper {
+    background-color: rgb(18, 10, 29);
+    height: 100vh;
+    font-family: 'Raleway';
+    color: whitesmoke;
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr;
+
+
+    .hello-text {
+      grid-column: 2/4;
+      justify-self: start;
+      align-self: end;
+      font-size: 120px;
+    }
+
+    .this-is-me {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      justify-self: start;
+      align-self: start;
+      margin-left: 200px;
+      font-size: 16px;
+    }
+
+    .white-line {
+      grid-column: 2/4;
+      width: 180px;
+      grid-row: 2/3;
+      justify-self: start;
+      align-self: start;
+    }
+  }
 }
